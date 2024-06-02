@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Online-Shopping</title>
+  </head>
+  <style>
+     @media screen and (min-width: 600px) and (max-width: 768px) {
+      .card
+        {
+          justify-content: start;
+          background-position: center;
+         
+        }
+       
+      }
+
+      /* Tablet Devices */
+
+      @media screen and (min-width: 769px) and (max-width: 992px) {
+        .card
+        {
+          justify-content: center;
+         
+        }
+         
+      }
+
+      /* Dekstop device */
+
+      @media screen and (min-width: 993px) and (max-width: 1200px) {
+        .card
+        {
+          justify-content: center;
+          margin-left: 100px;
+          margin-top: 50px;
+        }
+        
+      }
+    .parent -container
+    {
+      flex: wrap;  
+    }
+    .x{
+      display: flex;
+      background-color:#cf0909;
+    }
+    .y{
+      background-color: rgb(17, 131, 237);
+    }
+    .z{
+      background-color:#e52297;
+      
+    }
+    .card{
+      height: 330px;
+      margin: 15px;
+      padding: 20px;
+      border: double 7px black;
+      border-radius: 15px;
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+      text-shadow: 1px 1px;
+      box-shadow: 10px 10px grey;  
+      background-position: center;
+    }
+    img{
+        height: 90px;
+        width: 70px;    
+    } 
+  </style>
+  <body>
+    <div class="parent -container">
+    <div class="x card">The girls accessories<br/><br/>
+        <img src="i1/bracelet.jpg"><br/><br/>
+       <b>Bracelet</b><br/><br/>
+       <i>A fashion accessory is a decorative item that supplements one's outfit. </i><br/><br/>
+       <p>Add To Card</p>
+    </div>
+    <div class="y card">The footwear card<br/><br/>
+        <img src="i2/footwears.jpg"><br/><br/>
+        <b>footwears</b><br/><br/>
+        <i>A woman's shoes really go a long way towards telling you who she is, what she is like.</i><br/><br/>
+        <p>Add To Card</p>
+    </div>
+    <div class="z card">The watch card<br/><br/>
+        <img src="i3/watch.jpg"><br/><br/>
+       <b>watch</b><br/><br/>
+       <i>The stylish and trending watches for girls.</i><br/><br/>
+       <p>Add To Card</p>
+    </div>
+    </div>
+  </body>
+</html>
