@@ -1,55 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>Online-Shopping</title>
   </head>
   <style>
-     @media screen and (min-width: 600px) and (max-width: 768px) {
-      .card
-        {
-          justify-content: start;
-          background-position: center;
-         
-        }
-       
-      }
-
-      /* Tablet Devices */
-
-      @media screen and (min-width: 769px) and (max-width: 992px) {
-        .card
-        {
-          justify-content: center;
-         
-        }
-         
-      }
-
-      /* Dekstop device */
-
-      @media screen and (min-width: 993px) and (max-width: 1200px) {
-        .card
-        {
-          justify-content: center;
-          margin-left: 100px;
-          margin-top: 50px;
-        }
-        
-      }
-    .parent -container
-    {
-      flex: wrap;  
-    }
-    .x{
-      display: flex;
-      background-color:#cf0909;
-    }
-    .y{
-      background-color: rgb(17, 131, 237);
-    }
-    .z{
-      background-color:#e52297;
-      
+    body{
+      background-color: rgb(184, 102, 225);
     }
     .card{
       height: 330px;
@@ -64,10 +20,89 @@
       box-shadow: 10px 10px grey;  
       background-position: center;
     }
+    
+    .parent -container
+    {
+      display: flex;
+      justify-content: space-around;  
+    }
+    .x{
+      background-color:#cf0909;
+    }
+    .y{
+      background-color: rgb(17, 131, 237);
+    }
+    .z{
+      background-color:#e52297;
+      
+    } 
     img{
         height: 90px;
-        width: 70px;    
-    } 
+        width: 70px;
+        border-radius: 10px;
+        box-shadow: 4px 4px black;    
+    }
+    
+     @media screen and (min-width: 600px) and (max-width: 768px) {
+      .card
+        {
+          justify-content: start;
+          background-position: center;
+         
+        }
+       
+      }
+      /* Small Devices */
+
+      @media screen and (max-width: 600px) {
+        .parent -container{
+          justify-content: start;
+        }
+        .card
+        {
+          justify-content: end;
+        }
+      }
+      
+
+      /* Tablet Devices */
+
+      @media screen and (min-width: 769px) and (max-width: 992px) {
+        .card
+        {
+          justify-content: center;
+          margin-top: 30px;
+          margin-left: 50px;
+         
+        }
+         
+      }
+
+      /* Dekstop device */
+
+      @media screen and (min-width: 993px) and (max-width: 1200px) {
+        .card
+        {
+          justify-content: center;
+          margin-left: 100px;
+          margin-top: 50px;
+          border-radius: 10px;
+        }
+        
+      }
+      /* Large Devices */
+
+      @media screen and (min-width: 993px) and (max-width: 1250px) {
+        .parent -container{
+          justify-content: start;
+        }
+        .card{
+          width: 200px;
+          margin-bottom: 100px;
+          margin-top: 50px;
+        }
+      }
+     
   </style>
   <body>
     <div class="parent -container">
